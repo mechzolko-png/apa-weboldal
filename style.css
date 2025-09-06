@@ -1,0 +1,183 @@
+/* Alap beállítások */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Fejléc */
+header {
+    font-size: 30px;
+    color: white;
+    background-image: url('iron_man.jpg'); /* cseréld le a saját képedre */
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 0 20px;
+}
+
+header p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+/* Menü */
+nav {
+    background-color: #e63946;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd166;
+}
+
+/* Main tartalom */
+main {
+    padding: 40px 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.mb {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.mb:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.alc h2 {
+    margin-bottom: 15px;
+    color: #e63946;
+}
+
+/* Képek */
+.k {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #e63946;
+}
+
+/* Lábléc */
+footer {
+    background-color: #1d3557;
+    color: white;
+    padding: 30px 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer .e a {
+    color: #ffd166;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+footer .v p {
+    margin-top: 10px;
+}
+
+/* Reszponzív */
+@media (max-width: 768px) {
+    main {
+        padding: 20px 5%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header {
+        font-size: 35px;
+        height: 200px;
+    }
+}
+
+/* Mobilra kisebb header cím */
+@media (max-width: 480px) {
+    header {
+        font-size: 28px; /* kisebb betűméret */
+        height: 150px;   /* kisebb magasság */
+        padding: 10px;
+    }
+
+    header p {
+        font-size: 14px; /* alcím kisebb */
+    }
+}
+
+.hivas{
+    margin-top: 20px;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h{
+   text-decoration: none;
+   color: #ffd166;
+   background-color: #1d3557; 
+   padding: 10px;
+   border-radius: 10px;
+}
+
+.h:hover{
+    background-color: aqua;
+    color: #000000;
+    transition: all 1s;
+}
+
+.mbl{
+    text-decoration: none;
+    color: black;
+}
